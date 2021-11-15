@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(4,73,91);
+    background: linear-gradient(180deg, rgba(4,73,91,1) 29%, rgba(172,135,23,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input, 
+.btn {
+    height: 2.3rem;
+    border: none;
+    outline: none;
+    padding: 0 0.8rem;
+    margin-bottom: 2rem;
+}
+    
+#input {
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-bottom: 3px solid #301B3F;
+    margin-right: -0.3rem;
+}
+
+.btn {
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: #301B3F;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 5px solid #301B3F;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+#input:focus{
+    background: linear-gradient(#FFFFFF, #EDFFA9);
+}
+
+#when-where{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city{
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 5px 5px 10px #301B3F;
+}
+
+#date{
+    margin-top: -0.9rem;
+    font-size: 0.9rem;
+}
+
+#temperature{
+    padding: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.sun{
+    display: flex;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background: url(' http://openweathermap.org/img/wn/01d@2x.png');
+} 
+
+#feelsLike,
+#conditions{
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px #000;
+}
+
+#variation {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
